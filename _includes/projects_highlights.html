@@ -1,0 +1,41 @@
+<section class="testimonials">
+    <h3 class="h3">Destaques</h3>
+    <ul class="testimonials-list has-scrollbar no-select-text">
+        {% for item in include.collection %}
+            {% if item.highlight == true %}
+                <li class="testimonials-item">
+                    <div class="content-card cursor" data-testimonials-item>
+                        <h4 class="h4" data-testimonials-title data-testimonials-avatar>{{ item.title }}</h4>
+                        <div class="testimonials-text" data-testimonials-text>
+                            {{ item.description }}
+                        </div>
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</section>
+
+<div class="modal-container no-select-text" data-modal-container>
+    <div class="overlay" data-overlay></div>
+    <section class="testimonials-modal">
+        <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="modal-img-wrapper">
+            <figure class="modal-avatar-box">
+                <img style="display: none;" data-modal-img>
+            </figure>
+        </div>
+
+        <div class="modal-content">
+            <h4 class="h3 modal-title" data-modal-title>{{ item.title }}</h4>
+            <time datetime="2021-06-14"></time>
+            <div data-modal-text>
+                <p></p>
+            </div>
+            <a href="{{ item.url }}">teste</a>
+        </div>
+    </section>
+</div>

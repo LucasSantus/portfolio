@@ -1,0 +1,18 @@
+
+{% for item in include.collection %}
+    <div class="card">
+        <a href="{{ item.url }}">
+            <span class="header">
+                {{ item.title }}
+            </span>
+
+            <hr />
+
+            {% if item.desc != false %}
+                <p class="body">
+                    {{ item.desc }}
+                </p>
+            {% endif %}
+        </a>
+    </div>
+{% endfor %}

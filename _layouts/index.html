@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Portfolio Pessoal</title>
+
+        <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <aside class="sidebar" data-sidebar>
+                {% include sidenav.html %}
+            </aside>
+
+            <div class="main-content">
+                {% for author in site.data.home.author %}
+                    <nav class="navbar">
+                        <ul class="navbar-list">
+                            <li class="navbar-item">
+                                <button class="navbar-link active" data-nav-link>Sobre</button>
+                            </li>
+                            <li class="navbar-item">
+                                <button class="navbar-link" data-nav-link>Projetos</button>
+                            </li>
+                            <li class="navbar-item">
+                                <button class="navbar-link" data-nav-link>Habilidades</button>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <article class="about active" data-page="sobre">
+                        <header>
+                            <h2 class="h2 article-title">Sobre</h2>
+                        </header>
+
+                        <section class="about-text no-select-text">
+                            <p>
+                                {{ author.description }}
+                            </p>
+                        </section>
+
+                        <section class="service">
+                            <h3 class="h3 service-title">What i'm doing</h3>
+                            <ul class="service-list no-select-text">
+                                <li class="service-item">
+                                    <div class="service-icon-box">
+                                        <img src="./assets/images/icon-design.svg
+                                        " alt="design icon" width="40">
+                                    </div>
+                                    <div class="service-content-box">
+                                        <h4 class="h4 service-item-title">Web design</h4>
+                                        <p class="service-item-text">
+                                        The most modern and high-quality design made at a professional level.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="service-item">
+                                    <div class="service-icon-box">
+                                        <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                                    </div>
+                                    <div class="service-content-box">
+                                        <h4 class="h4 service-item-title">Web development</h4>
+                                        <p class="service-item-text">
+                                        High-quality development of sites at the professional level.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="service-item">
+                                    <div class="service-icon-box">
+                                        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                                    </div>
+                                    <div class="service-content-box">
+                                        <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                        <p class="service-item-text">
+                                        Professional development of applications for iOS and Android.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="service-item">
+                                    <div class="service-icon-box">
+                                        <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                                    </div>
+                                    <div class="service-content-box">
+                                        <h4 class="h4 service-item-title">Photography</h4>
+                                        <p class="service-item-text">
+                                        I make high-quality photos of any category at a professional level.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- PROJETOS DESTAQUES -->
+                        {% include projects_highlights.html collection=site.data.home.projects %}
+                    </article>
+
+                    <article class="resume" data-page="projetos">
+                        <header>
+                            <h2 class="h2 article-title">Projetos</h2>
+                        </header>
+
+                        <section class="timeline">
+                            <div class="title-wrapper">
+                                <div class="icon-box">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3">Education</h3>
+                            </div>
+
+                            <ol class="timeline-list">
+                                {% for project in site.data.home.projects %}
+                                    <li class="timeline-item">
+                                        <a href="{{ project.url }}" target="_blank">
+                                            <h4 class="h4 timeline-item-title">{{ project.title }}</h4>
+                                            <span>{{ project.starting_year }} {% if project.end_year %} — {{ project.end_year }} {% endif %}</span>
+                                            <p class="timeline-text">
+                                                {{ project.description }}
+                                            </p>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ol>
+                        </section>
+                    </article>
+
+                    <article class="portfolio" data-page="habilidades">
+                        <header>
+                            <h2 class="h2 article-title">Habilidades</h2>
+                        </header>
+
+                        <section class="skill">
+                            <h3 class="h3" style="margin-bottom: 1rem;">Ferramentas Utilizadas</h3>
+                            <ul class="skills-list content-card no-select-text">
+                                {% for skill in author.skills %}
+                                    <li class="skills-item">
+                                        <h5 class="h5">{{ skill.title }}</h5>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </section>
+
+                        <section class="projects" style="display: none">
+                            <ul class="filter-list">
+                                <li class="filter-item">
+                                    <button class="active" data-filter-btn>All</button>
+                                </li>
+                            </ul>
+
+                            <div class="filter-select-box">
+                                <button class="filter-select" data-select>
+                                    <div class="select-value" data-selecct-value>Select category</div>
+                                    <div class="select-icon">
+                                        <ion-icon name="chevron-down"></ion-icon>
+                                    </div>
+                                </button>
+
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <button data-select-item>All</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </article>
+                    {% break %}
+                {% endfor %}
+            </div>
+        </main>
+
+        <!-- BEGIN: SCRIPTS -->
+
+        <script src="/assets/js/scripts.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- END: SCRIPTS -->
+    </body>
+</html>

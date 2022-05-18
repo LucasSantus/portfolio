@@ -1,0 +1,64 @@
+projects:
+  - title: Spotify
+    description: loremjhsda
+    starting_year: 2019
+    end_year: 2020
+    url: https://github.com/LucasSantus/spotify
+    highlight: true
+
+  - title: Gallery Images
+    description: loremjhsda
+    starting_year: 2020
+    url: https://github.com/LucasSantus/gallery-images
+    highlight: true
+
+author:
+  - name: Lucas Eduardo O. Santos
+    job: Web Developer
+    image: https://github.com/LucasSantus.png
+    description: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid voluptatibus quas, soluta amet mollitia ducimus eos a commodi laborum. Qui consectetur excepturi ratione, esse ad eligendi, fugit, animi voluptatum nihil harum delectus? Nesciunt ipsam voluptate quibusdam repellat, harum vitae iusto tempora magnam saepe aperiam ipsa sit doloribus sequi cum, nostrum excepturi distinctio eum exercitationem cupiditate id mollitia facere. Quaerat nisi labore, voluptates sunt a iusto vitae accusantium iure atque laborum dicta optio ipsam, cum at temporibus velit.</p> <p>Maiores earum ab blanditiis unde cumque eveniet quisquam sapiente architecto. Quibusdam molestias, dolores accusantium fugiat enim provident. Perferendis tempore nam sint veritatis.</p>
+
+    list_contact:
+      - title: Email
+        description: leos9877@gmail.com
+        icon: mail-outline
+
+      - title: Celular
+        description: (35) 9 9877-8549
+        icon: call-outline
+
+      - title: Localização
+        description: Três Corações, MG
+        icon: location-outline
+
+      - title: Nascimento
+        description: Março 11, 2000
+        icon: calendar-outline
+
+    social_media:
+      - title: Github
+        url: https://github.com/LucasSantus
+        icon: github
+
+      - title: Linkedin
+        url: https://www.linkedin.com/in/lucas-santus/
+        icon: linkedin
+    
+    skills:
+      - title: Django Framework
+      - title: Python
+      - title: Docker
+      - title: React
+      - title: CSS
+      - title: JavaScript
+      - title: TypeScript
+      - title: Flutter
+      - title: Dart
+      - title: Markdown
+      - title: Git Flow
+      - title: MySql
+      - title: html5
+      - title: React Native
+      - title: Jekyll
+      - title: Git 
+      - title: NodeJS
