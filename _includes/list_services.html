@@ -1,0 +1,13 @@
+{% for item in include.collection %}
+    <li class="service-item">
+        <div class="service-icon-box">
+            <div style="font-size: 40px; color: #FFC663;">
+                <ion-icon name="{{ item.icon }}"></ion-icon>
+            </div>
+        </div>
+        <div class="service-content-box">
+            <h4 class="h4 service-item-title">{{ item.title }}</h4>
+            <p class="service-item-text">{{ item.description }}</p>
+        </div>
+    </li>
+{% endfor%}

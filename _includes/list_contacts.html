@@ -1,0 +1,11 @@
+{% for item in include.collection %}
+    <li class="contact-item">
+        <div class="icon-box">
+            <ion-icon name="{{ item.icon }}"></ion-icon>
+        </div>
+        <div class="contact-info">
+            <p class="contact-title">{{ item.title }}</p>
+            <p class="contact-link">{{ item.description }}</p>
+        </div>
+    </li>
+{% endfor %}

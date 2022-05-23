@@ -1,0 +1,7 @@
+{% for item in include.collection %}
+    <li class="social-item">
+        <a href="{{ item.url | relative_url }}" class="social-link">
+            <ion-icon name="logo-{{ item.icon }}"></ion-icon>
+        </a>
+    </li>
+{% endfor %}
