@@ -19,17 +19,53 @@
 
     <body>
         <main>
-            <aside class="sidebar" data-sidebar>
-                {% include sidenav.html %}
-            </aside>
+            {% for author in site.data.home.author %}
+                <aside class="sidebar" data-sidebar>
+                    <div class="sidebar-info no-select-text">
+                        <figure class="avatar-box">
+                            <img src="{{ author.image }}" alt="{{ author.name }}" width="80" style="border-radius: 2rem; padding: .2rem;">
+                        </figure>
+                        <div class="info-content">
+                            <h1 class="name" title="{{ author.name }}">{{ author.name }}</h1>
+                            <p class="title">{{ author.job }}</p>
+                        </div>
+                        <button class="info_more-btn" data-sidebar-btn>
+                            <span>Ver Dados</span>
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                    </div>
+                
+                    <div class="sidebar-info_more">
+                
+                        <div class="separator"></div>
+                
+                        <ul class="contacts-list">
 
-            <div class="main-content">
-                {% for author in site.data.home.author %}
+                            <!-- MÍDIAS SOCIAIS -->
+                            {% include list_contacts.html collection=author.contacts %}
+                        
+                        </ul>
+                
+                        <div class="separator"></div>
+                
+                        <ul class="social-list">
+
+                            <!-- MÍDIAS SOCIAIS -->
+                            {% include list_social_medias.html collection=author.social_media %}
+
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="main-content">
                     <nav class="navbar">
                         <ul class="navbar-list">
                             <li class="navbar-item">
                                 <button class="navbar-link active" data-nav-link>Sobre</button>
                             </li>
+                            <li class="navbar-item">
+                                <button class="navbar-link" data-nav-link>Resumo</button>
+                              </li>
                             <li class="navbar-item">
                                 <button class="navbar-link" data-nav-link>Projetos</button>
                             </li>
@@ -44,97 +80,141 @@
                             <h2 class="h2 article-title">Sobre</h2>
                         </header>
 
-                        <section class="about-text no-select-text">
+                        <section class="about-text">
                             <p>
                                 {{ author.description }}
                             </p>
                         </section>
 
                         <section class="service">
-                            <h3 class="h3 service-title">What i'm doing</h3>
-                            <ul class="service-list no-select-text">
-                                <li class="service-item">
-                                    <div class="service-icon-box">
-                                        <img src="./assets/images/icon-design.svg
-                                        " alt="design icon" width="40">
-                                    </div>
-                                    <div class="service-content-box">
-                                        <h4 class="h4 service-item-title">Web design</h4>
-                                        <p class="service-item-text">
-                                        The most modern and high-quality design made at a professional level.
-                                        </p>
-                                    </div>
-                                </li>
+                            <h3 class="h3 service-title">Hobby</h3>
+                            <ul class="service-list">
 
-                                <li class="service-item">
-                                    <div class="service-icon-box">
-                                        <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-                                    </div>
-                                    <div class="service-content-box">
-                                        <h4 class="h4 service-item-title">Web development</h4>
-                                        <p class="service-item-text">
-                                        High-quality development of sites at the professional level.
-                                        </p>
-                                    </div>
-                                </li>
+                                <!-- SERVIÇOS -->
+                                {% include list_services.html collection=author.services %}
 
-                                <li class="service-item">
-                                    <div class="service-icon-box">
-                                        <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-                                    </div>
-                                    <div class="service-content-box">
-                                        <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                                        <p class="service-item-text">
-                                        Professional development of applications for iOS and Android.
-                                        </p>
-                                    </div>
-                                </li>
-
-                                <li class="service-item">
-                                    <div class="service-icon-box">
-                                        <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-                                    </div>
-                                    <div class="service-content-box">
-                                        <h4 class="h4 service-item-title">Photography</h4>
-                                        <p class="service-item-text">
-                                        I make high-quality photos of any category at a professional level.
-                                        </p>
-                                    </div>
-                                </li>
                             </ul>
                         </section>
 
-                        <!-- PROJETOS DESTAQUES -->
-                        {% include projects_highlights.html collection=site.data.home.projects %}
+                        <section class="testimonials">
+                            <h3 class="h3">Destaques</h3>
+                            <ul class="testimonials-list has-scrollbar no-select-text">
+                                
+                                <!-- PROJETOS DESTAQUES -->
+                                {% include list_projects_highlights.html collection=site.data.home.projects %}
+
+                            </ul>
+                        </section>
+
+                        <!-- BEGIN: MODAL -->
+                            <div class="modal-container" data-modal-container>
+                                <div class="overlay" data-overlay></div>
+                                <section class="testimonials-modal">
+                                    <button class="modal-close-btn" data-modal-close-btn>
+                                        <ion-icon name="close-outline"></ion-icon>
+                                    </button>
+                            
+                                    <div class="modal-img-wrapper">
+                                        <figure class="modal-avatar-box">
+                                            <img style="display: none;" data-modal-img>
+                                        </figure>
+                                    </div>
+                            
+                                    <div class="modal-content">
+                                        <h4 class="h3 modal-title" data-modal-title>{{ item.title }}</h4>
+                                        <time datetime="2021-06-14"></time>
+                                        <div data-modal-text>
+                                            <p></p>
+                                        </div>
+                                        <a href="{{ item.url | relative_url }}">Ver Mais</a>
+                                    </div>
+                                </section>
+                            </div>
+                        <!-- END: MODAL -->
                     </article>
 
-                    <article class="resume" data-page="projetos">
+                    <article class="resume" data-page="resumo">
                         <header>
-                            <h2 class="h2 article-title">Projetos</h2>
+                            <h2 class="h2 article-title">Resumo</h2>
                         </header>
 
-                        <section class="timeline">
-                            <div class="title-wrapper">
-                                <div class="icon-box">
-                                    <ion-icon name="book-outline"></ion-icon>
+                        {% for resume in author.resumes %}
+                            <section class="timeline">
+                                <div class="title-wrapper">
+                                    <div class="icon-box">
+                                        <ion-icon name="book-outline"></ion-icon>
+                                    </div>
+                                    <h3 class="h3">{{ resume.title }}</h3>
                                 </div>
-                                <h3 class="h3">Education</h3>
-                            </div>
+                    
+                                <ol class="timeline-list">
+                                    {% for job in resume.jobs %}
+                                        <li class="timeline-item">
+                                            <h4 class="h4 timeline-item-title">{{ job.title }}</h4>
+                                            <span>{{ job.starting_year }} - {% if job.end_year %} {{ job.end_year }} {% else %} Até o Momento {% endif %}</span>
+                                            <p class="timeline-text">{{ job.description }}</p>
+                                        </li>
+                                    {% endfor %}
+                                </ol>
+                            </section>
+                        {% endfor %}
+                    </article>
 
-                            <ol class="timeline-list">
+                    <article class="portfolio" data-page="projetos">
+                        <header>
+                          <h2 class="h2 article-title">Projetos</h2>
+                        </header>
+                
+                        <section class="projects">
+                            <ul class="filter-list">
+                                <li class="filter-item">
+                                    <button class="active" data-filter-btn>All</button>
+                                </li>
+
+                                {% for category in site.data.home.categories %}
+                                    <li class="filter-item">
+                                        <button data-filter-btn>{{ category.title }}</button>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                
+                            <div class="filter-select-box">
+                                <button class="filter-select" data-select>
+                                    <div class="select-value" data-selecct-value>Select category</div>
+                                    <div class="select-icon">
+                                        <ion-icon name="chevron-down"></ion-icon>
+                                    </div>
+                                </button>
+                    
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <button data-select-item>All</button>
+                                    </li>
+
+                                    {% for category in site.data.home.categories %}
+                                        <li class="select-item">
+                                            <button data-select-item>{{ category.title }}</button>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            
+                            <ul class="project-list">
                                 {% for project in site.data.home.projects %}
-                                    <li class="timeline-item">
-                                        <a href="{{ project.url }}" target="_blank">
-                                            <h4 class="h4 timeline-item-title">{{ project.title }}</h4>
-                                            <span>{{ project.starting_year }} {% if project.end_year %} — {{ project.end_year }} {% endif %}</span>
-                                            <p class="timeline-text">
-                                                {{ project.description }}
-                                            </p>
+                                    <li class="project-item active" data-filter-item data-category="{{ project.category | downcase }}">
+                                        <a href="#">
+                                            <figure class="project-img">
+                                                <div class="project-item-icon-box">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </div>
+                                                <img src="./assets/images/project-1.jpg" alt="{{ project.title }}" loading="lazy">
+                                            </figure>
+                                            <h3 class="project-title">{{ project.title }}</h3>
+                                            <p class="project-category">{{ project.category }}</p>
                                         </a>
                                     </li>
                                 {% endfor %}
-                            </ol>
+                            </ul>
                         </section>
                     </article>
 
@@ -177,9 +257,9 @@
                             </div>
                         </section>
                     </article>
-                    {% break %}
-                {% endfor %}
-            </div>
+                </div>
+                {% break %}
+            {% endfor %}
         </main>
 
         <!-- BEGIN: SCRIPTS -->
