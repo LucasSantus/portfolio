@@ -834,9 +834,9 @@ main {
 
 .no-select-text{
   -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .skills-title { margin-bottom: 20px; }
