@@ -1,16 +1,22 @@
 projects:
   - title: Spotify
-    description: loremjhsda
-    starting_year: 2019
+    description: lorem DA DAS SPOTI jhsda
+    category: Web
+    year: 2019
     end_year: 2020
     url: https://github.com/LucasSantus/spotify
     highlight: true
 
   - title: Gallery Images
-    description: loremjhsda
+    description: lor  emj h DSA DAS DAS GALLERY sda
+    category: Mobile
     starting_year: 2020
     url: https://github.com/LucasSantus/gallery-images
     highlight: true
+
+categories:
+  - title: Web
+  - title: Mobile
 
 author:
   - name: Lucas Eduardo O. Santos
@@ -18,7 +24,7 @@ author:
     image: https://github.com/LucasSantus.png
     description: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid voluptatibus quas, soluta amet mollitia ducimus eos a commodi laborum. Qui consectetur excepturi ratione, esse ad eligendi, fugit, animi voluptatum nihil harum delectus? Nesciunt ipsam voluptate quibusdam repellat, harum vitae iusto tempora magnam saepe aperiam ipsa sit doloribus sequi cum, nostrum excepturi distinctio eum exercitationem cupiditate id mollitia facere. Quaerat nisi labore, voluptates sunt a iusto vitae accusantium iure atque laborum dicta optio ipsam, cum at temporibus velit.</p> <p>Maiores earum ab blanditiis unde cumque eveniet quisquam sapiente architecto. Quibusdam molestias, dolores accusantium fugiat enim provident. Perferendis tempore nam sint veritatis.</p>
 
-    list_contact:
+    contacts:
       - title: Email
         description: leos9877@gmail.com
         icon: mail-outline
@@ -34,6 +40,46 @@ author:
       - title: Nascimento
         description: Março 11, 2000
         icon: calendar-outline
+
+    services:
+      - title: afd sf sd
+        description: dshf sdfsd fsd ajd
+        icon: create-outline
+
+    resumes:
+      - title: Experiência Profissional
+        jobs:
+          - title: blabla
+            description: hu fhuds hi fh hfi hs hf sh d fds ad 
+            starting_year: Mar 2020
+            end_year: Dez 2021
+
+          - title: dsafdafs
+            description: hu fhuds hi sd f  sdfhdfs adaf s h asdffi hs hf sh d fds ad 
+            starting_year: Mar 2020
+            end_year: Dez 2021
+
+          - title: df sdf sadf sdsafdafs
+            description: hu fhuds ff sdafsd fsdashi sd f  sdfhdfs adaf s h asdffi hs hf sh d fds ad 
+            starting_year: Mar 2020
+            end_year: Dez 2021
+      
+      - title: Estágio
+        jobs:
+          - title: blabla
+            description: hu fhf sdf sda fasd fasd fuds hi fh hfi hs hf sh d fds ad 
+            starting_year: Abril de 2020
+            end_year: Outubro de 2021
+
+          - title: blabla
+            description: hu fhf sdf sda fasd fasd fuds hi fh hfi hs hf sh d fds ad 
+            starting_year: Abril de 2020
+            end_year: Outubro de 2021
+
+          - title: blabla
+            description: hu fhf sdf sda fasd fasd fuds hi fh hfi hs hf sh d fds ad 
+            starting_year: Abril de 2020
+            end_year: Outubro de 2021
 
     social_media:
       - title: Github
