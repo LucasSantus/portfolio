@@ -16,18 +16,9 @@ _"Criar um portfólio capaz de reunir todos projetos pessoais open source desenv
 
 * [Sobre](#sobre)
 * [Tabela de Conteudo](#tabela-de-conteudo)
-* [Status do Projeto](#status)
 * [Por Que](#por-que)
 * [Autor](#autor)
 * [Licença](#license)
-
---------------------------------------------------------------------------------------
-
-<h3 id="status">:heavy_exclamation_mark: Status do Projeto</h3>
-
-<h4 align="center"> 
-	:heavy_check_mark: Sistema web finalizado... :heavy_check_mark:
-</h4>
 
 --------------------------------------------------------------------------------------
 
