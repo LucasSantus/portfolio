@@ -2,6 +2,183 @@
 layout: default
 ---
 
-<h2>Projetos</h2>
+{% for author in site.data.author.author %}
+    <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info no-select-text">
+            <figure class="avatar-box">
+                <img src="{{ author.image }}" alt="{{ author.name }}" width="120" style="border-radius: 2rem; padding: .2rem;">
+            </figure>
+            <div class="info-content">
+                <h1 class="name" title="{{ author.name }}">{{ author.name }}</h1>
+                <p class="title">{{ author.job }}</p>
+            </div>
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>Ver Dados</span>
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+        </div>
 
-{% include card_list.html collection=site.data.home.projects %}
+        <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+                <!-- MÍDIAS SOCIAIS -->
+                {% include list_contacts.html collection=site.data.contacts.contacts %}
+            
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+                <!-- MÍDIAS SOCIAIS -->
+                {% include list_social_medias.html collection=site.data.social_media.social_media %}
+
+            </ul>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <button class="navbar-link active" data-nav-link>Sobre</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Resumo</button>
+                    </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Projetos</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Habilidades</button>
+                </li>
+            </ul>
+        </nav>
+
+        <article class="about active" data-page="sobre">
+            <header>
+                <h2 class="h2 article-title">Sobre</h2>
+            </header>
+
+            <section class="about-text">
+                <p>
+                    {{ author.description }}
+                </p>
+            </section>
+
+            <section class="service">
+                <h3 class="h3 service-title">Hobby</h3>
+                <ul class="service-list">
+
+                    <!-- SERVIÇOS -->
+                    {% include list_services.html collection=site.data.services.services %}
+
+                </ul>
+            </section>
+
+            <section class="testimonials">
+                <h3 class="h3">Destaques</h3>
+                <ul class="testimonials-list has-scrollbar no-select-text">
+                    
+                    <!-- PROJETOS DESTAQUES -->
+                    {% include list_projects_highlights.html collection=site.data.projects.projects %}
+
+                </ul>
+            </section>
+
+            <!-- BEGIN: MODAL -->
+                <div class="modal-container" data-modal-container>
+                    <div class="overlay" data-overlay></div>
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img style="display: none;" data-modal-img>
+                            </figure>
+                        </div>
+                
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title></h4>
+                            <div data-modal-text></div>
+                            <a data-modal-url href="#"></a>
+                        </div>
+                    </section>
+                </div>
+                
+            <!-- END: MODAL -->
+        </article>
+
+        <article class="resume" data-page="resumo">
+            <header>
+                <h2 class="h2 article-title">Resumo</h2>
+            </header>
+
+            {% include list_resumes.html collection=site.data.resumes.resumes %}
+        </article>
+
+        <article class="portfolio" data-page="projetos">
+            <header>
+                <h2 class="h2 article-title">Projetos</h2>
+            </header>
+
+            <section class="projects">
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    {% for category in site.data.projects.categories %}
+                        <li class="filter-item">
+                            <button data-filter-btn>{{ category.title }}</button>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                <div class="filter-select-box">
+                    <button class="filter-select" data-select>
+                        <div class="select-value" data-selecct-value>Select category</div>
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                    </button>
+        
+                    <ul class="select-list">
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        {% for category in site.data.projects.categories %}
+                            <li class="select-item">
+                                <button data-select-item>{{ category.title }}</button>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <ul class="project-list">
+                    {% include list_projects.html collection=site.data.projects.projects %}
+                </ul>
+            </section>
+        </article>
+
+        <article class="portfolio" data-page="habilidades">
+            <header>
+                <h2 class="h2 article-title">Skills</h2>
+            </header>
+
+            <section class="skill">
+                <h3 class="h3 skills-title">Tempo Estudando</h3>
+                <ul class="skills-list content-card">
+                    {% include list_skills.html collection=site.data.skills.skills %}
+                </ul>
+            </section>
+        </article>
+    </div>
+{% break %}
+{% endfor %}
