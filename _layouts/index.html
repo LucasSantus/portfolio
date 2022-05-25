@@ -19,7 +19,7 @@
 
     <body>
         <main>
-            {% for author in site.data.home.author %}
+            {% for author in site.data.author.author %}
                 <aside class="sidebar" data-sidebar>
                     <div class="sidebar-info no-select-text">
                         <figure class="avatar-box">
@@ -42,7 +42,7 @@
                         <ul class="contacts-list">
 
                             <!-- MÍDIAS SOCIAIS -->
-                            {% include list_contacts.html collection=author.contacts %}
+                            {% include list_contacts.html collection=site.data.contacts.contacts %}
                         
                         </ul>
                 
@@ -51,7 +51,7 @@
                         <ul class="social-list">
 
                             <!-- MÍDIAS SOCIAIS -->
-                            {% include list_social_medias.html collection=author.social_media %}
+                            {% include list_social_medias.html collection=site.data.social_media.social_media %}
 
                         </ul>
                     </div>
@@ -91,7 +91,7 @@
                             <ul class="service-list">
 
                                 <!-- SERVIÇOS -->
-                                {% include list_services.html collection=author.services %}
+                                {% include list_services.html collection=site.data.services.services %}
 
                             </ul>
                         </section>
@@ -101,7 +101,7 @@
                             <ul class="testimonials-list has-scrollbar no-select-text">
                                 
                                 <!-- PROJETOS DESTAQUES -->
-                                {% include list_projects_highlights.html collection=site.data.home.projects %}
+                                {% include list_projects_highlights.html collection=site.data.projects.projects %}
 
                             </ul>
                         </section>
@@ -121,15 +121,13 @@
                                     </div>
                             
                                     <div class="modal-content">
-                                        <h4 class="h3 modal-title" data-modal-title>{{ item.title }}</h4>
-                                        <time datetime="2021-06-14"></time>
-                                        <div data-modal-text>
-                                            <p></p>
-                                        </div>
-                                        <a href="{{ item.url | relative_url }}">Ver Mais</a>
+                                        <h4 class="h3 modal-title" data-modal-title></h4>
+                                        <div data-modal-text></div>
+                                        <a data-modal-url></a>
                                     </div>
                                 </section>
                             </div>
+                            
                         <!-- END: MODAL -->
                     </article>
 
@@ -138,26 +136,7 @@
                             <h2 class="h2 article-title">Resumo</h2>
                         </header>
 
-                        {% for resume in author.resumes %}
-                            <section class="timeline">
-                                <div class="title-wrapper">
-                                    <div class="icon-box">
-                                        <ion-icon name="book-outline"></ion-icon>
-                                    </div>
-                                    <h3 class="h3">{{ resume.title }}</h3>
-                                </div>
-                    
-                                <ol class="timeline-list">
-                                    {% for job in resume.jobs %}
-                                        <li class="timeline-item">
-                                            <h4 class="h4 timeline-item-title">{{ job.title }}</h4>
-                                            <span>{{ job.starting_year }} - {% if job.end_year %} {{ job.end_year }} {% else %} Até o Momento {% endif %}</span>
-                                            <p class="timeline-text">{{ job.description }}</p>
-                                        </li>
-                                    {% endfor %}
-                                </ol>
-                            </section>
-                        {% endfor %}
+                        {% include list_resumes.html collection=site.data.resumes.resumes %}
                     </article>
 
                     <article class="portfolio" data-page="projetos">
@@ -171,7 +150,7 @@
                                     <button class="active" data-filter-btn>All</button>
                                 </li>
 
-                                {% for category in site.data.home.categories %}
+                                {% for category in site.data.projects.categories %}
                                     <li class="filter-item">
                                         <button data-filter-btn>{{ category.title }}</button>
                                     </li>
@@ -191,7 +170,7 @@
                                         <button data-select-item>All</button>
                                     </li>
 
-                                    {% for category in site.data.home.categories %}
+                                    {% for category in site.data.projects.categories %}
                                         <li class="select-item">
                                             <button data-select-item>{{ category.title }}</button>
                                         </li>
@@ -200,61 +179,22 @@
                             </div>
                             
                             <ul class="project-list">
-                                {% for project in site.data.home.projects %}
-                                    <li class="project-item active" data-filter-item data-category="{{ project.category | downcase }}">
-                                        <a href="#">
-                                            <figure class="project-img">
-                                                <div class="project-item-icon-box">
-                                                    <ion-icon name="eye-outline"></ion-icon>
-                                                </div>
-                                                <img src="./assets/images/project-1.jpg" alt="{{ project.title }}" loading="lazy">
-                                            </figure>
-                                            <h3 class="project-title">{{ project.title }}</h3>
-                                            <p class="project-category">{{ project.category }}</p>
-                                        </a>
-                                    </li>
-                                {% endfor %}
+                                {% include list_projects.html collection=site.data.projects.projects %}
                             </ul>
                         </section>
                     </article>
 
                     <article class="portfolio" data-page="habilidades">
                         <header>
-                            <h2 class="h2 article-title">Habilidades</h2>
+                            <h2 class="h2 article-title">Skills</h2>
                         </header>
 
                         <section class="skill">
-                            <h3 class="h3" style="margin-bottom: 1rem;">Ferramentas Utilizadas</h3>
-                            <ul class="skills-list content-card no-select-text">
-                                {% for skill in author.skills %}
-                                    <li class="skills-item">
-                                        <h5 class="h5">{{ skill.title }}</h5>
-                                    </li>
-                                {% endfor %}
+                            <h3 class="h3 skills-title">Tempo Estudando</h3>
+                            <ul class="skills-list content-card">
+                                {% include list_skills.html collection=site.data.skills.skills %}
+
                             </ul>
-                        </section>
-
-                        <section class="projects" style="display: none">
-                            <ul class="filter-list">
-                                <li class="filter-item">
-                                    <button class="active" data-filter-btn>All</button>
-                                </li>
-                            </ul>
-
-                            <div class="filter-select-box">
-                                <button class="filter-select" data-select>
-                                    <div class="select-value" data-selecct-value>Select category</div>
-                                    <div class="select-icon">
-                                        <ion-icon name="chevron-down"></ion-icon>
-                                    </div>
-                                </button>
-
-                                <ul class="select-list">
-                                    <li class="select-item">
-                                        <button data-select-item>All</button>
-                                    </li>
-                                </ul>
-                            </div>
                         </section>
                     </article>
                 </div>

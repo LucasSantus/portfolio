@@ -1,0 +1,8 @@
+social_media:
+  - title: Github
+    url: https://github.com/LucasSantus
+    icon: github
+
+  - title: Linkedin
+    url: https://www.linkedin.com/in/lucas-santus/
+    icon: linkedin

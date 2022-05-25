@@ -1,10 +1,15 @@
 {% for item in include.collection %}
     {% if item.highlight == true %}
-        <li class="testimonials-item">
-            <div class="content-card cursor" data-testimonials-item>
-                <h4 class="h4" data-testimonials-title data-testimonials-avatar>{{ item.title }}</h4>
+        <li class="testimonials-item cursor">
+            <div class="content-card" data-testimonials-item>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-testimonials-avatar>{{ item.title }}</h4>
+                <div style="display: none;" data-testimonials-url>
+                    <a href="{{ item.url | relative_url }}" target="_blank" class="link-modal">Ver Mais</a>
+                </div>
                 <div class="testimonials-text" data-testimonials-text>
-                    {{ item.description }}
+                    <p>
+                        {{ item.description }}
+                    </p>
                 </div>
             </div>
         </li>

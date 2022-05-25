@@ -1,0 +1,14 @@
+{% for item in include.collection %}
+    <li class="project-item active" data-filter-item data-category="{{ item.category | downcase }}">
+        <a href="{{ item.url }}" target="_blank">
+            <figure class="project-img">
+                <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+            </figure>
+            <h3 class="project-title">{{ item.title }}</h3>
+            <p class="project-category">{{ item.category }}</p>
+        </a>
+    </li>
+{% endfor%}

@@ -1,0 +1,20 @@
+{% for item in include.collection %}
+    <li class="skills-item">
+        <div class="title-wrapper">
+            <div>
+                <h5 class="h5">{{ item.title }}</h5>
+            </div>
+        </div>
+
+        <div class="skill-progress-bg">
+            {% for time_skill in site.data.skills.time_skills %}
+                {% if time_skill.id == item.id_time_skills %}
+                    <div id="{{ item.title }}-{{ forloop.index }}" class="skill-progress-fill"></div>
+                    <script>
+                        document.getElementById("{{ item.title }}-{{ forloop.index }}").style.width = "{{time_skill.size}}" + "%";
+                    </script>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </li>
+{% endfor %}

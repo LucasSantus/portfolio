@@ -1,0 +1,72 @@
+skills:
+  - title: Django Framework
+    id_time_skills: 3
+
+  - title: Git 
+    id_time_skills: 1
+
+  - title: Python
+    id_time_skills: 2
+
+  - title: HTML5
+    id_time_skills: 2
+
+  - title: Docker & Docker Compose
+    id_time_skills: 3
+
+  - title: CSS
+    id_time_skills: 2
+
+  - title: Markdown
+    id_time_skills: 3
+
+  - title: JavaScript
+    id_time_skills: 2
+
+  - title: Git Flow
+    id_time_skills: 4
+
+  - title: Flutter
+    id_time_skills: 3
+
+  - title: Dart
+    id_time_skills: 3
+
+  - title: Jekyll
+    id_time_skills: 5
+
+  - title: MySql
+    id_time_skills: 3
+
+  - title: React
+    id_time_skills: 4
+
+  - title: TypeScript
+    id_time_skills: 4
+
+  - title: React Native
+    id_time_skills: 4
+
+  - title: NodeJS
+    id_time_skills: 5
+
+time_skills:
+  - id: 1
+    title: 3 Anos +
+    size: 80
+
+  - id: 2
+    title: 2 Anos +
+    size: 60
+
+  - id: 3
+    title: 1 Ano +
+    size: 40
+
+  - id: 4
+    title: 6 Meses +
+    size: 20
+
+  - id: 5
+    title: 3 Meses +
+    size: 10

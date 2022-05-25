@@ -1,0 +1,20 @@
+{% for item in include.collection %}
+    <section class="timeline">
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">{{ item.title }}</h3>
+        </div>
+
+        <ol class="timeline-list">
+            {% for job in item.jobs %}
+                <li class="timeline-item">
+                    <h4 class="h4 timeline-item-title">{{ job.title }}</h4>
+                    <span>{{ job.starting_year }} - {% if job.end_year %} {{ job.end_year }} {% else %} Até o Momento {% endif %}</span>
+                    <p class="timeline-text">{{ job.description }}</p>
+                </li>
+            {% endfor %}
+        </ol>
+    </section>
+{% endfor%}

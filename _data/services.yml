@@ -1,0 +1,4 @@
+services:
+  - title: Desenvolvimento Web
+    description: Criação de sistemas web simples
+    icon: code-outline

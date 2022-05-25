@@ -1,0 +1,16 @@
+contacts:
+  - title: Email
+    description: leos9877@gmail.com
+    icon: mail-outline
+
+  - title: Telefone
+    description: (35) 9 9877-8549
+    icon: call-outline
+
+  - title: Localização
+    description: Três Corações, MG
+    icon: location-outline
+
+  - title: Data Nasc
+    description: Março 11, 2000
+    icon: calendar-outline
