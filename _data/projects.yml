@@ -1,6 +1,6 @@
 projects:
   - title: Spotify
-    description: lor fsdf sadf asd fsd fsda fsd fsdfsd fsd fsad fsad fsdf em DA DAS SPOTI jhsda
+    description: Tendo como propósito clonar a UI do website ( Spotify ), o projeto foi desenvolvido com base na mesma. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript( Bootstrap 4 ).
     category: Web
     year: 2019
     end_year: 2020
@@ -9,21 +9,20 @@ projects:
     highlight: true
 
   - title: Gallery Images
-    description: lor  emj h DSA DAS DAS GALLdf sadf sdaf sadfsdafsdfsadfasdf sdf sdaf sd ERY sda
-    category: Mobile
-    starting_year: 2020
+    description: Tendo como propósito realizar a exibição de uma lista de imagens. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript( Bootstrap 5 ).
+    category: Web
+    starting_year: 2021
     url: https://github.com/LucasSantus/gallery-images
     image: assets/images/no__image.svg
     highlight: true
-
-  - title: Gallery Images
-    description: lor  emj h DSA DAS DAS GA fsd fsdfsdLfsdf sdf sd fsdsdfsd fsdf sd fsd fsdfsdfLERY sda
-    category: Mobile
-    starting_year: 2020
-    url: https://github.com/LucasSantus/gallery-images
+  
+  - title: Bin 4 Dec
+    description: Tendo como propósito realizar a conversão de números binários para números decimais. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
+    category: Web
+    starting_year: 2022
+    url: https://github.com/LucasSantus/bin4dec
     image: assets/images/no__image.svg
     highlight: true
 
 categories:
   - title: Web
-  - title: Mobile
