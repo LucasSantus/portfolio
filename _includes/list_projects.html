@@ -5,10 +5,10 @@
                 <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+                <img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy" style="border-radius: 2rem; padding: .2rem;">
             </figure>
             <h3 class="project-title">{{ item.title }}</h3>
             <p class="project-category">{{ item.category }}</p>
         </a>
     </li>
-{% endfor%}
+{% endfor %}

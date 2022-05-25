@@ -1,0 +1,6 @@
+[submodule ".\\projects\\bin4dec"]
+	path = .\\projects\\bin4dec
+	url = git@github.com:LucasSantus/bin4dec.git
+[submodule ".\\projects\\gallery-images"]
+	path = .\\projects\\gallery-images
+	url = git@github.com:LucasSantus/gallery-images.git
