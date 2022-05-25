@@ -2,33 +2,44 @@ resumes:
   - title: Experiência Profissional
     jobs:
       - title: blabla
-        description: hu fhuds hi fh hfi hs hf sh d fds ad 
-        starting_year: Mar 2020
-        end_year: Dez 2021
+        description: Atuando como Desenvolvedor Web. <br/>- Django Framework, Docker, API Rest, Git, GitFlow, Python, HTML5, CSS3, JavaScript, JQuery, Bootstrap, Materialize. <br/>- SO Linux. <br/>- Testes e manutenção de códigos. <br/>- Deploy.
+        starting_year: Mar 2021
 
-      - title: dsafdafs
-        description: hu fhuds hi sd f  sdfhdfs adaf s h asdffi hs hf sh d fds ad 
-        starting_year: Mar 2020
-        end_year: Dez 2021
-
-      - title: df sdf sadf sdsafdafs
-        description: hu fhuds ff sdafsd fsdashi sd f  sdfhdfs adaf s h asdffi hs hf sh d fds ad 
-        starting_year: Mar 2020
-        end_year: Dez 2021
-  
-  - title: Estágio
+  - title: Estágios
     jobs:
-      - title: blabla
-        description: hu fhf sdf sda fasd fasd fuds hi fh hfi hs hf sh d fds ad 
-        starting_year: Abril de 2020
-        end_year: Outubro de 2021
+      - title: Modelagem de Sistemas
+        description: Atuando na área de Modelagem. <br/>- Estudo relacionado a Modelagem de Sistemas. <br/>- Levantamento de Requisitos. <br/>- Modelagem de Sistemas.
+        starting_year: Ago 2021
+        end_year: Nov 2021
+    
+      - title: Treinamento Web
+        description: Atuando na área de Desenvolvimento Web. <br/>- Capacitação e Treinamento em T.I. <br/>- Django Framework, Docker, API Rest, Git, GitFlow, Python, HTML5, CSS3, JavaScript, JQuery, Bootstrap, Materialize. <br/>- Metodologia (SCRUM). <br/>- SO Linux.
+        starting_year: Fev 2021
+        end_year: Mai 2021
 
-      - title: blabla
-        description: hu fhf sdf sda fasd fasd fuds hi fh hfi hs hf sh d fds ad 
-        starting_year: Abril de 2020
-        end_year: Outubro de 2021
+      - title: Engenharia de Requisitos
+        description: Atuando como Desenvolvedor Web Full Stack na Iniciativa Ciêntifica de desenvolver uma Brinquedoteca Virtual. <br/>- Levantamento de Requisitos. <br/>- Django Framework, Docker, API Rest, Git, Python, HTML5, CSS3, JavaScript, JQuery, Materialize. <br/>- Desenvolvimento de Artigos.
+        starting_year: Abr 2020
+        end_year: Out 2021
 
-      - title: blabla
-        description: hu fhf sdf sda fasd fasd fuds hi fh hfi hs hf sh d fds ad 
-        starting_year: Abril de 2020
-        end_year: Outubro de 2021
+      - title: Desenvolvimento Web Django
+        description: Atuando como Desenvolvedor Web na construção de um sistema de gestão para clínicas. <br/>- Django Framework, Docker, API Rest, Git, Python, HTML5, CSS3, JavaScript, JQuery, Materialize. <br/>- Tester Aplicação Web. <br/>- Tester Aplicativo Mobile.
+        starting_year: Fev 2020
+        end_year: Jun 2020
+
+      - title: Manutenção de Computadores
+        description: Atuando na área de manutenção em um projeto de coleta de lixo eletrônico. <br/>- Manutenção Corretiva de Computadores.<br/>- Separação de Material para Reciclagem. <br/>- Separação de Peças e Testes de Componentes. <br/>- Manutenção em Periféricos para Computadores.
+        starting_year: Set 2019
+        end_year: Dez 2019
+
+  - title: Trabalho voluntário
+    jobs:
+      - title: Monitor
+        description: Participei como monitor do projeto de extensão "Informática para a Terceira Idade - Nível Avançado" realizado na Universidade Vale do Rio Verde.
+        starting_year: Ago 2018
+        end_year: Dez 2018
+
+      - title: Monitor
+        description: Participei como monitor do projeto de extensão "Informática para a Terceira Idade - Nível Básico" realizado na Universidade Vale do Rio Verde.
+        starting_year: Abr 2018
+        end_year: Jul 2018
