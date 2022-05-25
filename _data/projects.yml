@@ -21,7 +21,7 @@ projects:
     category: HTML
     starting_year: 2022
     url: https://github.com/LucasSantus/bin4dec
-    image: assets/images/no__image.svg
+    image: assets/images/projects/bin4dec.svg
     highlight: true
 
 categories:
