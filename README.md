@@ -16,19 +16,8 @@ _"Criar um portfólio capaz de reunir todos projetos pessoais open source desenv
 
 * [Sobre](#sobre)
 * [Tabela de Conteudo](#tabela-de-conteudo)
-* [Por Que](#por-que)
 * [Autor](#autor)
 * [Licença](#license)
-
---------------------------------------------------------------------------------------
-
-<h3 id="por-que">:question: Por Que</h3>
-
-Este projeto faz parte do meu portfólio pessoal, ficarei feliz caso você forneça algum feedback, código, estrutura, funcionalidade ou qualquer funcionalidade&melhoria que você possa relatar para melhora-lo.
-
-Você pode usar este projeto como quiser, seja para estudar, fazer melhorias, você que manda!
-
-Este é um projeto totalmente grátis!
 
 --------------------------------------------------------------------------------------
 
