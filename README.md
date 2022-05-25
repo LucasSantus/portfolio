@@ -12,15 +12,6 @@ _"Criar um portfólio capaz de reunir todos projetos pessoais open source desenv
 
 --------------------------------------------------------------------------------------
 
-<h3 id="tabela-de-conteudo">:ab: Tabela de Conteúdo</h3>
-
-* [Sobre](#sobre)
-* [Tabela de Conteudo](#tabela-de-conteudo)
-* [Autor](#autor)
-* [Licença](#license)
-
---------------------------------------------------------------------------------------
-
 <h3 id="autor">:bust_in_silhouette: Autor</h3>
 
 <table>
