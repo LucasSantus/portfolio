@@ -1,0 +1,3 @@
+[submodule ".\\projects\\bin4dec"]
+	path = .\\projects\\bin4dec
+	url = https://github.com/LucasSantus/bin4dec.git
