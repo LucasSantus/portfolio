@@ -14,3 +14,8 @@ contacts:
   - title: Data Nasc
     description: Março 11, 2000
     icon: calendar-outline
+
+  - title: Companhia
+    description: QoDeless
+    icon: business-outline
+  
