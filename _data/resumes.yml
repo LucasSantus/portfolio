@@ -1,45 +1,50 @@
 resumes:
   - title: Experiência Profissional
     jobs:
-      - title: Desenvolvedor Web Full Stack Junior
+      - title: Desenvolvedor Web Junior ( QoDeless )
+        description: Atuando como Desenvolvedor Web React. <br/>- React, TypeScript, Material UI
+        starting_year: May 2022
+  
+      - title: Desenvolvedor Web Full Stack Junior ( UNINCOR )
         description: Atuando como Desenvolvedor Web. <br/>- Django Framework, Docker, API Rest, Git, GitFlow, Python, HTML5, CSS3, JavaScript, JQuery, Bootstrap, Materialize. <br/>- SO Linux. <br/>- Testes e manutenção de códigos. <br/>- Deploy.
         starting_year: Mar 2021
+        end_year: May 2022
 
   - title: Estágios
     jobs:
-      - title: Modelagem de Sistemas
+      - title: Modelagem de Sistemas ( UNINCOR )
         description: Atuando na área de Modelagem. <br/>- Estudo relacionado a Modelagem de Sistemas. <br/>- Levantamento de Requisitos. <br/>- Modelagem de Sistemas.
         starting_year: Ago 2021
         end_year: Nov 2021
     
-      - title: Treinamento Web
+      - title: Treinamento Web ( UNINCOR )
         description: Atuando na área de Desenvolvimento Web. <br/>- Capacitação e Treinamento em T.I. <br/>- Django Framework, Docker, API Rest, Git, GitFlow, Python, HTML5, CSS3, JavaScript, JQuery, Bootstrap, Materialize. <br/>- Metodologia (SCRUM). <br/>- SO Linux.
         starting_year: Fev 2021
         end_year: Mai 2021
 
-      - title: Engenharia de Requisitos
+      - title: Engenharia de Requisitos ( UNINCOR )
         description: Atuando como Desenvolvedor Web Full Stack na Iniciativa Ciêntifica de desenvolver uma Brinquedoteca Virtual. <br/>- Levantamento de Requisitos. <br/>- Django Framework, Docker, API Rest, Git, Python, HTML5, CSS3, JavaScript, JQuery, Materialize. <br/>- Desenvolvimento de Artigos.
         starting_year: Abr 2020
         end_year: Out 2021
 
-      - title: Desenvolvimento Web Django
+      - title: Desenvolvimento Web Django ( UNINCOR )
         description: Atuando como Desenvolvedor Web na construção de um sistema de gestão para clínicas. <br/>- Django Framework, Docker, API Rest, Git, Python, HTML5, CSS3, JavaScript, JQuery, Materialize. <br/>- Tester Aplicação Web. <br/>- Tester Aplicativo Mobile.
         starting_year: Fev 2020
         end_year: Jun 2020
 
-      - title: Manutenção de Computadores
+      - title: Manutenção de Computadores ( UNINCOR )
         description: Atuando na área de manutenção em um projeto de coleta de lixo eletrônico. <br/>- Manutenção Corretiva de Computadores.<br/>- Separação de Material para Reciclagem. <br/>- Separação de Peças e Testes de Componentes. <br/>- Manutenção em Periféricos para Computadores.
         starting_year: Set 2019
         end_year: Dez 2019
 
   - title: Trabalho voluntário
     jobs:
-      - title: Monitor
+      - title: Monitor ( UNINCOR )
         description: Participei como monitor do projeto de extensão "Informática para a Terceira Idade - Nível Avançado" realizado na Universidade Vale do Rio Verde.
         starting_year: Ago 2018
         end_year: Dez 2018
 
-      - title: Monitor
+      - title: Monitor ( UNINCOR )
         description: Participei como monitor do projeto de extensão "Informática para a Terceira Idade - Nível Básico" realizado na Universidade Vale do Rio Verde.
         starting_year: Abr 2018
         end_year: Jul 2018
