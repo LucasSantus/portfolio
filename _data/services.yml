@@ -1,4 +1,12 @@
 services:
-  - title: Desenvolvimento Web
-    description: Criação de sistemas web simples
+  - title: Códigos
+    description: Desenvolver códigos com o propósito de resolver os problemas específicos.
     icon: code-outline
+
+  - title: Open Source
+    description: Projetos disponibilizados no sistema, são open source.
+    icon: clipboard-outline
+
+  - title: Projetos
+    description: Grande variedade de projetos disponibilizados, contendo maneiras diferentes de resolver um problema.
+    icon: folder-open-outline
