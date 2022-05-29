@@ -5,7 +5,7 @@ projects:
     year: 2019
     end_year: 2020
     url: https://github.com/LucasSantus/spotify
-    image: assets/images/no__image.svg
+    image: assets/images/projects/spotify.png
     highlight: true
 
   - title: Gallery Images
@@ -13,7 +13,7 @@ projects:
     category: HTML
     starting_year: 2021
     url: https://github.com/LucasSantus/gallery-images
-    image: assets/images/no__image.svg
+    image: assets/images/projects/gallery-images.png
     highlight: true
   
   - title: Bin 4 Dec
@@ -21,7 +21,7 @@ projects:
     category: HTML
     starting_year: 2022
     url: https://github.com/LucasSantus/bin4dec
-    image: assets/images/projects/bin4dec.svg
+    image: assets/images/projects/bin4dec.png
     highlight: true
 
 categories:
