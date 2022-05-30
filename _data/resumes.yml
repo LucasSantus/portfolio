@@ -1,11 +1,11 @@
 resumes:
   - title: Experiência Profissional
     jobs:
-      - title: Desenvolvedor Web Junior ( QoDeless )
-        description: Atuando como Desenvolvedor Web React. <br/>- React, TypeScript, Material UI
+      - title: Desenvolvedor Web ( QoDeless )
+        description: Atuando como Desenvolvedor Web React. <br/>- React, TypeScript, Material UI, Tailwind.
         starting_year: May 2022
   
-      - title: Desenvolvedor Web Full Stack Junior ( UNINCOR )
+      - title: Desenvolvedor Web Full Stack ( UNINCOR )
         description: Atuando como Desenvolvedor Web. <br/>- Django Framework, Docker, API Rest, Git, GitFlow, Python, HTML5, CSS3, JavaScript, JQuery, Bootstrap, Materialize. <br/>- SO Linux. <br/>- Testes e manutenção de códigos. <br/>- Deploy.
         starting_year: Mar 2021
         end_year: May 2022
