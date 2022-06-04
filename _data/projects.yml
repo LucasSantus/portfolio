@@ -1,11 +1,18 @@
 projects:
-  - title: Spotify
-    description: Tendo como propósito clonar a UI do website Spotify, o projeto foi desenvolvido com base na mesma. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript com o framework front-end Bootstrap 4.
+  - title: Beauty Salon
+    description: Tendo como propósito uma Landing Page relacionado a um salão especializado em tratamentos naturais. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
     category: HTML
-    year: 2019
-    end_year: 2020
-    url: https://github.com/LucasSantus/spotify
-    image: assets/images/projects/spotify.png
+    starting_year: 2022
+    url: https://github.com/LucasSantus/beauty-salon
+    image: assets/images/projects/beauty-salon.png
+    highlight: true
+
+  - title: Bin 4 Dec
+    description: Tendo como propósito realizar a conversão de números binários para números decimais. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
+    category: HTML
+    starting_year: 2022
+    url: https://github.com/LucasSantus/bin4dec
+    image: assets/images/projects/bin4dec.png
     highlight: true
 
   - title: Gallery Images
@@ -15,13 +22,14 @@ projects:
     url: https://github.com/LucasSantus/gallery-images
     image: assets/images/projects/gallery-images.png
     highlight: true
-  
-  - title: Bin 4 Dec
-    description: Tendo como propósito realizar a conversão de números binários para números decimais. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
+
+  - title: Spotify
+    description: Tendo como propósito clonar a UI do website Spotify, o projeto foi desenvolvido com base na mesma. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript com o framework front-end Bootstrap 4.
     category: HTML
-    starting_year: 2022
-    url: https://github.com/LucasSantus/bin4dec
-    image: assets/images/projects/bin4dec.png
+    year: 2019
+    end_year: 2020
+    url: https://github.com/LucasSantus/spotify
+    image: assets/images/projects/spotify.png
     highlight: true
 
 categories:

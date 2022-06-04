@@ -7,3 +7,6 @@
 [submodule "projects/spotify"]
 	path = projects/spotify
 	url = git@github.com:LucasSantus/spotify.git
+[submodule "projects/beauty-salon"]
+	path = projects/beauty-salon
+	url = git@github.com:LucasSantus/beauty-salon.git
