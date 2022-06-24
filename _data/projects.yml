@@ -1,6 +1,14 @@
 projects:
+  - title: Posts
+    description: Tendo como propósito um sistema de posts simples. O Projeto construído utilizando as tecnologias Django Framework e Bootstrap 5.
+    category: Django Framework
+    starting_year: 2022
+    url: https://github.com/LucasSantus/django-posts
+    image: assets/images/projects/django-posts.png
+    highlight: false
+  
   - title: Beauty Salon
-    description: Tendo como propósito uma Landing Page relacionado a um salão especializado em tratamentos naturais. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
+    description: Tendo como propósito uma Landing Page relacionado a um salão especializado em tratamentos naturais. O Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
     category: HTML
     starting_year: 2022
     url: https://github.com/LucasSantus/beauty-salon
@@ -8,7 +16,7 @@ projects:
     highlight: true
 
   - title: Bin 4 Dec
-    description: Tendo como propósito realizar a conversão de números binários para números decimais. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
+    description: Tendo como propósito realizar a conversão de números binários para números decimais. O Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
     category: HTML
     starting_year: 2022
     url: https://github.com/LucasSantus/bin4dec
@@ -16,7 +24,7 @@ projects:
     highlight: true
 
   - title: Gallery Images
-    description: Tendo como propósito realizar a exibição de uma lista de imagens. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript com o framework front-end Bootstrap 5.
+    description: Tendo como propósito realizar a exibição de uma lista de imagens. O Projeto construído utilizando as tecnologias HTML, CSS e JavaScript com o framework front-end Bootstrap 5.
     category: HTML
     starting_year: 2021
     url: https://github.com/LucasSantus/gallery-images
@@ -24,7 +32,7 @@ projects:
     highlight: true
 
   - title: Spotify
-    description: Tendo como propósito clonar a UI do website Spotify, o projeto foi desenvolvido com base na mesma. Projeto construído utilizando as tecnologias HTML, CSS e JavaScript com o framework front-end Bootstrap 4.
+    description: Tendo como propósito clonar a UI do website Spotify, o projeto foi desenvolvido com base na mesma. O Projeto construído utilizando as tecnologias HTML, CSS e JavaScript com o framework front-end Bootstrap 4.
     category: HTML
     year: 2019
     end_year: 2020
@@ -34,3 +42,5 @@ projects:
 
 categories:
   - title: HTML
+
+  - title: Django Framework
