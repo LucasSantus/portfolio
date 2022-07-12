@@ -1,12 +1,20 @@
 projects:
+  - title: Folders
+    description: Tendo como propósito uma navegação entre pastas dinâmicamente. O Projeto foi construído utilizando as tecnologias Django Framework e Bootstrap 5.
+    category: Django Framework
+    starting_year: 2022
+    url: https://github.com/LucasSantus/django-folders
+    image: assets/images/projects/django-folders.png
+    highlight: true
+
   - title: Posts
-    description: Tendo como propósito um sistema de posts simples. O Projeto construído utilizando as tecnologias Django Framework e Bootstrap 5.
+    description: Tendo como propósito um sistema de posts simples. O Projeto foi construído utilizando as tecnologias Django Framework e Bootstrap 5.
     category: Django Framework
     starting_year: 2022
     url: https://github.com/LucasSantus/django-posts
     image: assets/images/projects/django-posts.png
     highlight: false
-  
+
   - title: Beauty Salon
     description: Tendo como propósito uma Landing Page relacionado a um salão especializado em tratamentos naturais. O Projeto construído utilizando as tecnologias HTML, CSS e JavaScript.
     category: HTML
@@ -42,5 +50,4 @@ projects:
 
 categories:
   - title: HTML
-
   - title: Django Framework
