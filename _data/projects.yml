@@ -1,4 +1,12 @@
 projects:
+  - title: QR Code Generator
+    description: Tendo como propósito a geração de QR Codes via URL. O Projeto foi construído utilizando as tecnologias Django Framework e Bootstrap 5.
+    category: Django Framework
+    starting_year: 2022
+    url: https://github.com/LucasSantus/django-qrcode-generator
+    image: assets/images/projects/django-qrcode-generator.png
+    highlight: false
+
   - title: Folders
     description: Tendo como propósito uma navegação entre pastas dinâmicamente. O Projeto foi construído utilizando as tecnologias Django Framework e Bootstrap 5.
     category: Django Framework
